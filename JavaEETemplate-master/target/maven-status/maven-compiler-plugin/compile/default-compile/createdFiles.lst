@@ -1,4 +1,0 @@
-com\qa\persistence\domain\Account.class
-com\qa\persistence\repository\AccountMapRepository.class
-com\qa\util\JSONUtil.class
-com\qa\persistence\repository\AccountRepository.class

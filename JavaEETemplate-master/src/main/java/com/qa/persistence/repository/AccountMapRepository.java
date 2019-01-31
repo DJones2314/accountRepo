@@ -3,9 +3,11 @@ package com.qa.persistence.repository;
 import java.util.HashMap;
 import java.util.Map;
 
+import javax.enterprise.inject.Alternative;
+
 import com.qa.persistence.domain.Account;
 import com.qa.util.JSONUtil;
-
+@Alternative
 public class AccountMapRepository implements AccountRepository {
 
 	private Map<Long, Account> accountMap;

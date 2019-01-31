@@ -1,6 +1,8 @@
 package com.qa.persistence.repository;
 
 import java.util.List;
+
+import javax.enterprise.inject.Default;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
@@ -11,7 +13,7 @@ import com.qa.persistence.domain.Account;
 import com.qa.util.JSONUtil;
 import static javax.transaction.Transactional.TxType.REQUIRED;
 import static javax.transaction.Transactional.TxType.SUPPORTS;
-
+@Default
 @Transactional(SUPPORTS)
 public class DataBaseRepository implements AccountRepository{
 
